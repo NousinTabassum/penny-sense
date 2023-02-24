@@ -17,13 +17,15 @@ document.getElementById('diposite-button').addEventListener('click', function ()
         let total = balanceValue + dipositeAmount;
         balance.innerText = total;
         balanceValue = total;
-        dipositeField.value = '';
 
         let totalDiposite = dipositeValue + dipositeAmount;
         diposite.innerText = totalDiposite;
         dipositeValue = totalDiposite;
         dipositeField.value = '';
 
+    }
+    else {
+        dipositeField.value = '';
     }
 
 })
@@ -37,13 +39,15 @@ document.getElementById('Withdrow-button').addEventListener('click', function ()
         let totalWithdrow = withdrowAmount + withdrowValue;
         withdrow.innerText = totalWithdrow;
         withdrowValue = totalWithdrow;
-        withdrowField.value = '';
 
         let total = balanceValue - withdrowAmount;
         balance.innerText = total;
         balanceValue = total;
         withdrowField.value = '';
 
+    }
+    else {
+        withdrowField.value = '';
     }
 
 

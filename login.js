@@ -5,7 +5,7 @@ document.getElementById('submit').addEventListener('click', function () {
     const passwordButton = document.getElementById('password-button');
     const password = passwordButton.value;
 
-    if (email === 'nousin@gmail.com' && password === 'nousin133') {
+    if (email === 'admin@gmail.com' && password === '1234') {
         location.href = "home.html";
     }
     else {
