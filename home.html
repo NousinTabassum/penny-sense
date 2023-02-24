@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-mono">
+    <h1 class="text-4xl text-center font-bold text-sky-500 p-4 my-5">
+        Welcome to <span class="text-purple-600">Penny Sense</span>
+    </h1>
+
+    <div class="grid grid-cols-3 gap-4 m-20 ">
+        <div class="bg-violet-600 w-72 h-40 flex flex-col justify-center px-9 text-white text-3xl rounded">
+            <h3>Diposit</h3>
+            <h3 class="py-3">$: <span id="diposite">10</span></h3>
+        </div>
+        <div class="bg-red-600 w-72 h-40 flex flex-col justify-center px-9 text-white text-3xl rounded">
+            <h3>Withdrow</h3>
+            <h3 class="py-3">$: <span id="withdrow">15</span></h3>
+        </div>
+        <div class="bg-emerald-600 w-72 h-40 flex flex-col justify-center px-9 text-white text-3xl rounded">
+            <h3>Balance</h3>
+            <p class="py-3">$: <span id="balance">1400</span> </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mx-32">
+
+        <div class="bg-cyan-600 w-4/6 h-40 flex flex-col justify-center px-9  rounded">
+            <h3 class="text-2xl my-3 text-white">Please Deposite</h3>
+            <input id="diposite-amount" type="number" class="w-60" placeholder="Enter amount">
+            <button id="diposite-button"
+                class="text-xl  w-40 h-10 my-3 bg-cyan-800 rounded text-white">Diposite</button>
+        </div>
+
+        <div class="bg-pink-600 w-4/6 h-40 flex flex-col justify-center px-9 rounded ">
+            <h3 class="text-2xl my-3 text-white">Please Withdrow</h3>
+            <input id="withdrow-amount" type="number" class="w-60" placeholder="Enter amount">
+            <button id="Withdrow-button"
+                class="text-xl  w-40 h-10 my-3 bg-pink-800 rounded text-white">Withdrow</button>
+        </div>
+    </div>
+
+
+
+    <script src="calculation.js"></script>
+</body>
+
+</html>
